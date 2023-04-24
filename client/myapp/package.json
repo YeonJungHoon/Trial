@@ -38,5 +38,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3306/"
+  "proxy": "http://ls-ad26f0ea7d87cdf20d4c526e63ddedb39864b7a7.cnwkswnhvi85.ap-northeast-2.rds.amazonaws.com"
 }
