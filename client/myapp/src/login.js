@@ -1,46 +1,38 @@
 import React from "react";
-import jwt from 'jsonwebtoken'
-import {useCookies} from 'react-cookie'
+import styles from "./Login.module.css";
 
-
-function jwt(formData){
-    const token = jwt.sign(
-        {
-            nickname: this.nickname,
-            email: this.email,
-            password: this.password,
-
-        },
-        'worldchange1143!',
-        {
-            expiresIn: '7d'
-        }
-
-
-
-    )
-    return token;
-}
-
-function logout(){
-    return null;
+const Login = () => {
+  return (
+    <div className={styles.container}>
+      <form className={styles.form}>
+        <h2 className={styles.heading}>로그인</h2>
+        <div className={styles.inputGroup}>
+          <label className={styles.label} htmlFor="username">
+            아이디
+          </label>
+          <input className={styles.input} type="text" id="username" />
+        </div>
+        <div className={styles.inputGroup}>
+          <label className={styles.label} htmlFor="password">
+            비밀번호
+          </label>
+          <input className={styles.input} type="password" id="password" />
+        </div>
+        <button className={styles.button}>로그인</button>
+        <div className={styles.linkGroup}>
+          <a href="#" className={styles.link}>
+            아이디 찾기
+          </a>
+          <a href="#" className={styles.link}>
+            비밀번호 찾기
+          </a>
+          <a href="#" className={styles.link}>
+            회원가입
+          </a>
+        </div>
+      </form>
+    </div>
+  );
 };
 
-const [cookies, setCookie, removeCookie] =useCookies['access_token']
-
-/*serverside 에서 login check*/
-function login(formData){
-    const token = jwt(formData)
-    axios.post('http://localhost:3306/logincheck',formData).then((res)=>{
-        setCookie('access_token', token)
-        
-    } ).catch((error)=>{
-        alert('로그인 인증 실패')
-        console.log(error)
-        logout();
-    })
-        
-
-
-     
-}
+export default Login;

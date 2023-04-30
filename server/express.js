@@ -16,7 +16,7 @@ app.use(cors({
     credentials: true,          // 응답 헤더에 Access-Control-Allow-Credentials 추가
     optionsSuccessStatus: 200,  // 응답 상태 200으로 설정
 }))
-app.get('/', (req,res)=>{
+app.get('/app', (req,res)=>{
     res.header("Access-Control-Allow-Origin", "*");
     
 
@@ -27,7 +27,7 @@ app.get('/', (req,res)=>{
 
 })
 
-app.post('/login', (req,res)=>{
+app.post('/login2', (req,res)=>{
     res.header("Access-Control-Allow-Origin", "*");
     const nickname = req.body.nickname;
     const email = req.body.email;

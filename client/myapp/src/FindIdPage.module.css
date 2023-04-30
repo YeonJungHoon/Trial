@@ -1,0 +1,56 @@
+.idfind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  .idfind h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .idfind_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .idfind_form_group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .idfind_form_group label {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .idfind_form_group input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .idfind_btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6f14fc;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .idfind_btn:hover {
+    background-color: #8a3ffc;
+  }
+  

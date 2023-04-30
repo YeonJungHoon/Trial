@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.css';
 
+import Base from './Base'
 import App from './App';
+
+import Router from './Router'
 import reportWebVitals from './reportWebVitals';
 import { CookiesProvider } from 'react-cookie';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <CookiesProvider>
-      <App />
+
+      <Router></Router>
 
     </CookiesProvider>
   </React.StrictMode>

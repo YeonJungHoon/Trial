@@ -1,0 +1,34 @@
+/* SignUp.module.css */
+
+.signup_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #73c8e9, #6cd380);
+  }
+  
+  .signup_form {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .signup_title {
+    color: #303030;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .form_group {
+    margin-bottom: 20px;
+  }
+  
+  .form_label {
+    display: block;
+   
+  }
