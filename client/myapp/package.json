@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "ls-785d919d274b864c3c745f39c5bdc10226e0dbe1.cnwkswnhvi85.ap-northeast-2.rds.amazonaws.com"
+  "proxy": "http://ls-785d919d274b864c3c745f39c5bdc10226e0dbe1.cnwkswnhvi85.ap-northeast-2.rds.amazonaws.com"
 }
