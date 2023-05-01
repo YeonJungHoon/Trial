@@ -1,7 +1,7 @@
 const mysql = require('mysql')
 const connection = mysql.createConnection({
-    host: 'ls-ad26f0ea7d87cdf20d4c526e63ddedb39864b7a7.cnwkswnhvi85.ap-northeast-2.rds.amazonaws.com',
-    user:'dbmasteruser',
+    host: 'ls-785d919d274b864c3c745f39c5bdc10226e0dbe1.cnwkswnhvi85.ap-northeast-2.rds.amazonaws.com',
+    user:'root',
     password:'worldchange1143!',
     port:3306,
     database:'dbmaster'
